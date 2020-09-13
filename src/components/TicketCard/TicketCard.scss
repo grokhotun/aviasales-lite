@@ -1,0 +1,76 @@
+@import '../../styles/variables.scss';
+
+.ticket-card {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    @media (max-width:$maxwidth3){
+        padding: 10px;
+    }
+    // .ticket-card__header
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 0px 20px 0px;
+    }
+    // .ticket-card__price
+    &__price {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        color: #2196f3;
+    }
+    // .ticket-card__logo
+    &__logo {
+    }
+    // .ticket-card__body
+    &__body {
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 0px 15px 0px;
+            }
+        }
+    }
+    // .ticket-card__row
+    &__row {
+    }
+}
+
+.row-ticket-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // .row-ticket-card__col
+    &__col {
+        flex: 0 0 33%;
+    }
+
+    // .row-ticket-card__name
+    &__name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #a0b0b9;
+        @media (max-width:$maxwidth3){
+            font-size: 10px;
+        }
+    }
+
+    // .row-ticket-card__value
+
+    &__value {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #4a4a4a;
+        @media (max-width:$maxwidth3){
+            font-size: 12px;
+        }
+    }
+}
